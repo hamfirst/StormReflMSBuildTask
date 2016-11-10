@@ -46,6 +46,7 @@ namespace StormReflMsBuildTask
 
       builder.AppendSwitch("--");
       builder.AppendSwitch("-DSTORM_REFL_PARSE");
+      builder.AppendSwitch("-D_CRT_SECURE_NO_WARNINGS");
       builder.AppendSwitch("-x c++");
 
       if (IncludeDirs != null)
